@@ -1,0 +1,263 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+:root {
+  --layoutColor: rgb(73, 77, 75);
+  --descriptionColor: rgb(199, 190, 181);
+  --mobileColor: rgb(78, 73, 68);
+  --headingFont: "Abril Fatface", cursive;
+  --secondaryFont: "DM Serif Display", serif;
+  --tertiaryFont: "Cormorant", serif;
+}
+
+
+/*NAVBAR*/
+nav {
+  font-family: var(--secondaryFont);
+}
+.logo{
+  color: rgb(137, 162, 233);
+ }
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--layoutColor);
+  font-size: 1.5rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--descriptionColor);
+  margin: 2.5rem 1rem;
+  /*position: relative;*/
+  
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+.links {
+  display: flex;
+  flex-direction:row;
+ padding: 0rem 0 0rem 20rem;
+
+}
+/*HOME*/
+.home {
+  height: 80vh;
+  background-image: url("../public/home2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-family: var(--headingFont);
+  padding-bottom: 3rem;
+}
+.home__content{
+  margin-top: -7rem;
+  
+}
+.home__content h1 {
+  font-size: 3.5rem;
+}
+.home__content p {
+  font-size: 1.1rem;
+  margin-top: 0rem;
+ 
+  
+}
+/*BLOGS*/
+.title {
+  color: rgb(81, 81, 79);
+}
+.image {
+  width: 20%;
+}
+
+/*FOOTER*/
+
+footer {
+  color: var(--descriptionColor);
+  background-color: var(--layoutColor);
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  font-family: var(--tertiaryFont);
+
+}
+.footer p {
+  margin: 0.5rem;
+}
+/*REGISTER PAGE*/
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /*margin: 4rem 1rem;*/
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://www.rockrobinsid.com/images/blogs/blog-img-013.jpg")
+    center;
+      background-size: cover;
+}
+.card{
+  border-style: none;
+  margin: 2rem 0rem;
+}
+
+h1 {
+  color: var(--secondaryFont);
+  font-family: var(--headingFont);
+  font-size: 2rem;
+  font-weight: 300;
+}
+.form__section label {
+  display: inline-block;
+  width: 6rem;
+  text-align: left;
+  margin-right: 1rem;
+  
+}
+.form__section input {
+  width:14rem;
+}
+
+.submitBtn {
+  margin: 1rem;
+  background-color: rgb(202, 222, 239);
+  padding: 0.5rem 4rem;
+  border-radius: 5px;
+  border: 0.2px solid var(--descriptionColor);
+  transition: ease-in 0.1s;
+  font-family: var(--secondaryFont);
+  font-size: 1.3rem;
+}
+.formikErrMsg {
+  font-size: 0.7rem;
+  color: brown;
+}
+/*  PROFILE PAGE */
+
+.profile {
+  margin: 0;
+  padding: 0;
+  color: var(--mobileColor);
+  padding: 2rem;
+}
+/* BLOG PAGE */
+
+.blog {
+  /*background-color: var(--mobileColor);*/
+  min-height: 100vh;
+}
+
+.blog__main {
+  padding: 2rem 15rem;
+}
+
+.blogContainer {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.blogContainer__item {
+  padding: 1rem 1rem 3rem 1rem;
+}
+/* SEARCH BAR */
+
+.searchBar {
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+.searchBar input {
+  border: none;
+  color: var(--descriptionColor);
+  border-bottom: solid var(--descriptionColor) 1px;
+  width: 16rem;
+  height: 1.7rem;
+  font-family: var(--tertiaryFont);
+  font-size: 1.2rem;
+  background: transparent;
+}
+
+.searchBar label {
+  font-family: var(--secondaryFont);
+  font-size: 1.4rem;
+}
+/* PAGINATION */
+
+.paginationNav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-decoration: none;
+  list-style: none;
+  padding-bottom: 5rem;
+}
+
+.paginationNav__link {
+  background-color: transparent;
+  color:black;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.paginationNav__link:hover {
+  cursor: pointer;
+  background-color: var(--layoutColor);
+  color: white;
+}
+/* CONTACT PAGE */
+
+.contactPage {
+  text-align: center;
+}
+
+.div__contact {
+  font-size: 1.5rem;
+  font-family: var(--secondaryFont);
+}
+
+.div__contact a {
+  margin-left: 1rem;
+ color:black;
+  text-decoration: none;
+}
+
+.div__contact a:hover {
+  color: var(--descriptionColor);
+  text-decoration: underline;
+}
+.adminLink
+{
+  margin: 1rem;
+  
+}
